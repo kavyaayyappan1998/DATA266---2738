@@ -1,0 +1,14 @@
+For the AI use:
+
+I used AI to help with the CUDA C programming part of the assignment.Since I am not familiar with C concepts.
+But the comments are written by me to deeply understand what is really happening inside the coding.
+
+I also used AI to understand some parts of the assignment, especially GPU profiling. 
+Some of the terms like GPU profilin,  Nsight Compute ,  Nsight Systems and nvprof are not I am really aware of.  
+
+I used AI for debugging when I faced errors while compiling and running the CUDA program in Colab.
+
+I also used AI to simplify some of the code because some of the lines of codes are verbose and not needed.  
+
+
+Tools I used : ChatGPT, Claude.

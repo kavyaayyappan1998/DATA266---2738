@@ -1,5 +1,7 @@
 # DATA266---2738
 
+Question 1 is the doc file of explaining about the 1st question - autoregressive models and real-world examples
+
 Cuda.ipynb has the 3rd question - matrix multiplication using CUDA C programming and 
 Measurement and analysis ( 4 and 5)
 

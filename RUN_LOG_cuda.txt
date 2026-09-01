@@ -1,0 +1,25 @@
+DATA 266 HW1 CUDA run
+SID4 = 2738
+SEED = 2738
+Start time = 2026-09-01 20:28:42.721663
+
+===== N=256 =====
+GPU=Tesla T4
+SEED=2738
+BLOCK=16x16=256 threads
+N,CPU_ms,GPU_kernel_ms,H2D_plus_D2H_ms,GPU_end_to_end_ms,Speedup,MaxAbsError
+256,3.7868,0.0879,0.2492,0.3372,11.2303,0.0000
+
+===== N=1024 =====
+GPU=Tesla T4
+SEED=2738
+BLOCK=16x16=256 threads
+N,CPU_ms,GPU_kernel_ms,H2D_plus_D2H_ms,GPU_end_to_end_ms,Speedup,MaxAbsError
+1024,273.8404,3.1712,2.7668,5.9379,46.1172,0.0000
+
+===== N=4096 =====
+GPU=Tesla T4
+SEED=2738
+BLOCK=16x16=256 threads
+N,CPU_ms,GPU_kernel_ms,H2D_plus_D2H_ms,GPU_end_to_end_ms,Speedup,MaxAbsError
+4096,22603.3495,200.4960,43.0395,243.5354,92.8134,0.0001

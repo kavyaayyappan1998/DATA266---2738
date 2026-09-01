@@ -1,0 +1,18 @@
+Q1. What are autoregressive models? Provide real-world examples.  (5 points)
+
+Autoregressive model predicts one thing at a time and each prediction depends on whatever came before it. That is the whole idea. The name also says it: "auto" means self and "regressive" means looking back. So,the model looks back at its own past values to guess the next one.
+There is a simple reason this works. Chain rule of probability lets you split any joint distribution into a product of conditionals:
+
+P(x₁, x₂, …, xₙ) = ∏ᵢ₌₁ⁿ P(xᵢ | x₁, …, xᵢ₋₁)
+
+This split is exact, so nothing is lost. You just turn one hard problem into a series of easy ones.Instead of modelling everything at once.You only ever answer "what comes next?"
+
+Some of the real-world examples are:
+- Weather forecasting: Tomorrow's temperature is guessed from the last few days' temperatures.
+- Stock prices: Today's price is predicted using yesterday's and last week's prices.
+- Sales forecasting: A shop predicts next month's sales from past months.
+- ChatGPT and Claude. These write one word at a time. Each new word is chosen based on all the words before it. That is why they are called autoregressive language models.
+- Music generation apps: The next note is picked based on the notes already played.
+- Electricity demand:  Power companies predict tomorrow's usage from past usage.
+
+One thing worth remembering is that these models assume the past holds a pattern that continues. When something sudden happens, like a market crash or a storm, the prediction can go badly wrong.

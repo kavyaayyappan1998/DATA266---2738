@@ -1,0 +1,48 @@
+GPU LAB QUICK START
+
+1) Copy this entire GPU_Assignment1_GPU_LAB_READY folder to the GPU lab machine.
+
+2) Open Terminal:
+   cd /path/to/GPU_Assignment1_GPU_LAB_READY
+
+3) Verify the required GPU:
+   nvidia-smi
+   python3 -c "import torch; print('CUDA:', torch.cuda.is_available()); print('GPU:', torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'NONE'); print('PyTorch:', torch.__version__); print('PyTorch CUDA:', torch.version.cuda)"
+
+   STOP unless the GPU is NVIDIA GeForce RTX 4090 or RTX 5090.
+
+4) If Jupyter is already installed:
+   jupyter lab
+
+   If not:
+   python3 -m venv .venv
+   source .venv/bin/activate
+   python -m pip install --upgrade pip
+   pip install jupyterlab numpy pandas matplotlib tabulate torch
+   jupyter lab
+
+5) Run in this exact order, using Kernel -> Restart Kernel and Run All for each:
+   00_hw2_5_setup_provenance.ipynb
+   01_hw2_5_precision_bandwidth.ipynb
+   02_hw2_5_attention.ipynb
+   03_hw2_5_thermal_analysis_submission.ipynb
+
+6) After notebook 00, fill every [FILL IN] field in:
+   hw2_5_artifacts/reservation_gpu_hours.md
+
+7) Notebook 03 contains a 20-minute thermal run. Do not interrupt it.
+
+8) Before leaving the lab, confirm:
+   ls -lah hw2_5_artifacts
+   test -f hw2_5_artifacts/METRICS.md && echo "METRICS OK"
+   test -f hw2_5_artifacts/AI_USE.md && echo "AI_USE OK"
+   test -f hw2_5_artifacts/thermal_log.csv && echo "THERMAL OK"
+   test -f hw2_5_artifacts.zip && echo "ZIP OK"
+
+9) Copy back:
+   - all four executed .ipynb files
+   - hw2_5_artifacts/
+   - hw2_5_artifacts.zip
+   - README_FIRST.md
+
+Do NOT bring the old Tesla T4 artifact zip into the working folder for the final run.

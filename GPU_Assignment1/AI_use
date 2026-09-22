@@ -1,9 +1,9 @@
 1. Which parts did you use an assistant for and which did you write yourself?
 
-I used ChatGPT to scaffold the Python/PyTorch benchmark code, CUDA-event timing, GPU telemetry logging, plotting, OOM handling and the structure of the submission artifacts.  
+I used ChatGPT to get the high level code and the structure of the submission artifacts.  
 
-3. How did you find out? What did the failure look like?
+2. How did you find out? What did the failure look like?
 error message, implausible metric, shape mismatch, deprecated API, etc..
 
-4. Which tools did I use?
+3. Which tools did I use?
 Claude, ChatGPT.

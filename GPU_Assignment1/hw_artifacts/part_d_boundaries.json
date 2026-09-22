@@ -1,0 +1,23 @@
+{
+  "uuid": "GPU-10848bc4-988f-587b-68c0-ece9deaf4e09",
+  "batch": 4,
+  "heads": 32,
+  "head_dim": 64,
+  "dtype": "torch.float16",
+  "naive": {
+    "largest_success": 12288,
+    "smallest_failure": 12800,
+    "step": 512,
+    "status": "bracketed"
+  },
+  "fused_backend": "torch.nn.attention.FLASH_ATTENTION",
+  "fused": {
+    "largest_success": 65536,
+    "smallest_failure": null,
+    "step": 8192,
+    "status": "no failure observed through search cap 65536"
+  },
+  "fused_search_cap": 65536,
+  "fused_qkv_plus_output_GiB_at_largest_success": 4.0,
+  "fused_interpretation": "No fused-attention failure was observed through the explicit search cap of 65536 tokens. This is not claimed as the fused-attention limit; at very large S, Q/K/V/output storage can become the binding memory cost."
+}

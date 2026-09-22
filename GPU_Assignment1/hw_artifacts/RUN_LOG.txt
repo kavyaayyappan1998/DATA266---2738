@@ -1,0 +1,169 @@
+[2026-09-18T03:54:42.708449+00:00] ========================================================================================
+[2026-09-18T03:54:42.708552+00:00] HW2.5 Notebook 00 started
+[2026-09-18T03:54:42.708605+00:00] Python: 3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]
+[2026-09-18T03:54:42.708644+00:00] Platform: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[2026-09-18T03:54:42.708678+00:00] PyTorch: 2.11.0+cu128
+[2026-09-18T03:54:42.708710+00:00] PyTorch CUDA build: 12.8
+[2026-09-18T03:54:42.708756+00:00] CUDA available: True
+[2026-09-18T03:54:42.753078+00:00] Torch visible GPU 0: NVIDIA GeForce RTX 5090
+[2026-09-18T03:54:43.039675+00:00] Complete nvidia-smi -q saved to: /content/hw2_5_artifacts/nvidia_smi_q_gpu0_20260918_035442.txt
+[2026-09-18T03:54:43.039749+00:00] GPU index: 0
+[2026-09-18T03:54:43.039978+00:00] GPU name: NVIDIA GeForce RTX 5090
+[2026-09-18T03:54:43.040142+00:00] GPU UUID: GPU-10848bc4-988f-587b-68c0-ece9deaf4e09
+[2026-09-18T03:54:43.040185+00:00] Driver version: 610.60
+[2026-09-18T03:54:43.040219+00:00] Driver-supported CUDA version: not parsed
+[2026-09-18T03:54:43.040252+00:00] VRAM: 32607 MiB
+[2026-09-18T03:54:43.040613+00:00] Reported power limit: 575.00 W
+[2026-09-18T03:54:43.060301+00:00] Vendor specification:
+[2026-09-18T03:54:43.060411+00:00]   architecture: NVIDIA Blackwell
+[2026-09-18T03:54:43.060427+00:00]   memory_type: 32 GB GDDR7
+[2026-09-18T03:54:43.060438+00:00]   memory_bandwidth_GBs: 1792.0
+[2026-09-18T03:54:43.060446+00:00]   tensor_core_generation: 5th Generation
+[2026-09-18T03:54:43.060457+00:00]   tensor_supported_precisions: ['TF32', 'FP16', 'BF16', 'FP8', 'FP6', 'FP4', 'INT8']
+[2026-09-18T03:54:43.060467+00:00]   theoretical_tflops_dense: {'FP32': 104.8, 'TF32': 104.8, 'FP16': 209.5, 'BF16': 209.5, 'FP8': 419.0, 'FP4': 1676.0}
+[2026-09-18T03:54:43.060476+00:00]   source: NVIDIA RTX Blackwell GPU Architecture whitepaper, Appendix A
+[2026-09-18T03:54:43.060483+00:00]   source_url: https://images.nvidia.com/aem-dam/Solutions/geforce/blackwell/nvidia-rtx-blackwell-gpu-architecture.pdf
+[2026-09-18T03:54:43.060490+00:00]   source_accessed_utc: 2026-09-17
+[2026-09-18T03:54:43.060499+00:00]   supported_for_hw25: True
+[2026-09-18T03:54:43.060534+00:00] GPU NVIDIA GeForce RTX 5090 satisfies the HW2.5 hardware requirement.
+[2026-09-18T03:54:43.063267+00:00] Reservation record: /content/hw2_5_artifacts/reservation_gpu_hours.md
+[2026-09-18T03:54:43.624390+00:00] Saved pip_freeze.txt and environment.json
+[2026-09-18T03:56:59.549094+00:00] ========================================================================================
+[2026-09-18T03:56:59.549416+00:00] Notebook started | GPU=NVIDIA GeForce RTX 5090 | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | Driver CUDA=not parsed | PyTorch CUDA build=12.8
+[2026-09-18T03:56:59.833899+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | FP32 N=1024 | reps=200 | median=0.0464 ms | TFLOPS=46.314 | %peak=44.19 | CV=33.82% | IQR=0.0010 ms
+[2026-09-18T03:57:00.232303+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | FP32 N=4096 | reps=100 | median=2.1217 ms | TFLOPS=64.777 | %peak=61.81 | CV=7.32% | IQR=0.2786 ms
+[2026-09-18T03:57:01.079875+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | FP32 N=8192 | reps=30 | median=17.0693 ms | TFLOPS=64.414 | %peak=61.46 | CV=1.19% | IQR=0.2304 ms
+[2026-09-18T03:57:04.112371+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | FP32 N=16384 | reps=10 | median=136.3016 ms | TFLOPS=64.534 | %peak=61.58 | CV=2.08% | IQR=4.0914 ms
+[2026-09-18T03:57:04.285826+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | TF32 N=1024 | reps=200 | median=0.0314 ms | TFLOPS=68.374 | %peak=65.24 | CV=87.30% | IQR=0.0018 ms
+[2026-09-18T03:57:04.607125+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | TF32 N=4096 | reps=100 | median=1.3372 ms | TFLOPS=102.779 | %peak=98.07 | CV=9.84% | IQR=0.2645 ms
+[2026-09-18T03:57:05.171910+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | TF32 N=8192 | reps=30 | median=10.2218 ms | TFLOPS=107.565 | %peak=102.64 | CV=1.41% | IQR=0.1533 ms
+[2026-09-18T03:57:06.984192+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | TF32 N=16384 | reps=10 | median=78.4960 ms | TFLOPS=112.058 | %peak=106.93 | CV=0.18% | IQR=0.2651 ms
+[2026-09-18T03:57:07.338484+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | FP16 N=1024 | reps=200 | median=0.0199 ms | TFLOPS=108.066 | %peak=51.58 | CV=99.22% | IQR=0.0020 ms
+[2026-09-18T03:57:07.557543+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | FP16 N=4096 | reps=100 | median=0.6489 ms | TFLOPS=211.789 | %peak=101.09 | CV=13.38% | IQR=0.0267 ms
+[2026-09-18T03:57:07.912920+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | FP16 N=8192 | reps=30 | median=5.3130 ms | TFLOPS=206.948 | %peak=98.78 | CV=2.39% | IQR=0.1942 ms
+[2026-09-18T03:57:08.935558+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | FP16 N=16384 | reps=10 | median=42.1640 ms | TFLOPS=208.616 | %peak=99.58 | CV=0.33% | IQR=0.1472 ms
+[2026-09-18T03:57:09.285544+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | BF16 N=1024 | reps=200 | median=0.0277 ms | TFLOPS=77.538 | %peak=37.01 | CV=103.69% | IQR=0.0051 ms
+[2026-09-18T03:57:09.519597+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | BF16 N=4096 | reps=100 | median=0.7531 ms | TFLOPS=182.508 | %peak=87.12 | CV=13.78% | IQR=0.0050 ms
+[2026-09-18T03:57:09.868180+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | BF16 N=8192 | reps=30 | median=5.0888 ms | TFLOPS=216.065 | %peak=103.13 | CV=3.36% | IQR=0.2264 ms
+[2026-09-18T03:57:10.852822+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | BF16 N=16384 | reps=10 | median=40.9298 ms | TFLOPS=214.907 | %peak=102.58 | CV=2.03% | IQR=1.3362 ms
+[2026-09-18T03:57:11.131479+00:00] Saved /content/hw2_5_artifacts/figures/part_b_tflops_vs_matrix_size.png
+[2026-09-18T03:57:11.150377+00:00] Part B plateau | BF16 | N=8192 | tail spread=0.54% | max CV=3.36%
+[2026-09-18T03:57:11.150450+00:00] Part B plateau | FP16 | N=8192 | tail spread=0.80% | max CV=2.39%
+[2026-09-18T03:57:11.150498+00:00] Part B plateau | FP32 | N=8192 | tail spread=0.19% | max CV=2.08%
+[2026-09-18T03:57:11.150543+00:00] Part B plateau | TF32 | N=8192 | tail spread=4.09% | max CV=1.41%
+[2026-09-18T03:57:11.291318+00:00] No usable FP8 matmul path was exposed by this software stack.
+[2026-09-18T03:57:11.291376+00:00]   torch.mm FP8 failed: NotImplementedError: "addmm_cuda" not implemented for 'Float8_e4m3fn'
+[2026-09-18T03:57:11.291390+00:00]   torch._scaled_mm FP8 failed: RuntimeError: CUDA error: CUBLAS_STATUS_NOT_SUPPORTED when calling `cublasLtMatmulAlgoGetHeuristic( ltHandle, computeDesc.descriptor(), Adesc.descriptor(), Bdesc.descriptor(), Cdesc.descriptor(), Ddesc.descriptor(), preference.descriptor(), 1, &heuristicResult, &returnedResult)`
+[2026-09-18T03:57:11.463443+00:00] Part C memory-bound | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | elements=256000000 | median=1.9833 ms | effective=1548.90 GB/s | 86.43% of specified
+[2026-09-18T03:57:11.624512+00:00] Part C ridge point = 116.91 FLOP/byte
+[2026-09-18T03:57:11.624613+00:00] Part C memory add AI = 0.08333 FLOP/byte -> bandwidth-bound side
+[2026-09-18T03:57:11.624655+00:00] Part C matmul AI = 2730.67 FLOP/byte -> compute-bound side
+[2026-09-18T03:58:27.850963+00:00] ========================================================================================
+[2026-09-18T03:58:27.851327+00:00] Notebook started | GPU=NVIDIA GeForce RTX 5090 | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | Driver CUDA=not parsed | PyTorch CUDA build=12.8
+[2026-09-18T03:58:27.954561+00:00] Part D fused backend selected: torch.nn.attention.FLASH_ATTENTION
+[2026-09-18T03:58:28.290476+00:00] Part D | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | naive | S=512 | SUCCESS | latency=0.2243 ms | peak=0.1642 GiB
+[2026-09-18T03:58:28.432541+00:00] Part D | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | naive | S=1024 | SUCCESS | latency=1.1424 ms | peak=0.5704 GiB
+[2026-09-18T03:58:28.652506+00:00] Part D | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | naive | S=2048 | SUCCESS | latency=4.8113 ms | peak=2.1329 GiB
+[2026-09-18T03:58:28.959313+00:00] Part D | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | naive | S=4096 | SUCCESS | latency=20.9909 ms | peak=8.2579 GiB
+[2026-09-18T03:58:31.107536+00:00] Part D | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | naive | S=8192 | SUCCESS | latency=296.8183 ms | peak=32.5079 GiB
+[2026-09-18T03:59:00.934926+00:00] Part D | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | naive | S=16384 | OOM/FAIL | OutOfMemoryError: CUDA out of memory. Tried to allocate 64.00 GiB. GPU 0 has a total capacity of 31.84 GiB of which 0 bytes is free. Process 2054 has 17179869184.00 GiB memory in use. Of the allocated memory 64.76 GiB is allocated by PyTorch, and 11.88 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+[2026-09-18T03:59:21.570975+00:00] Part D | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | naive | S=12288 | SUCCESS | latency=17146.4453 ms | peak=72.7579 GiB
+[2026-09-18T03:59:46.835592+00:00] Part D | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | naive | S=14336 | OOM/FAIL | OutOfMemoryError: CUDA out of memory. Tried to allocate 49.00 GiB. GPU 0 has a total capacity of 31.84 GiB of which 0 bytes is free. Process 2054 has 17179869184.00 GiB memory in use. Of the allocated memory 49.66 GiB is allocated by PyTorch, and 11.88 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+[2026-09-18T04:00:11.746822+00:00] Part D | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | naive | S=13312 | OOM/FAIL | OutOfMemoryError: CUDA out of memory. Tried to allocate 42.25 GiB. GPU 0 has a total capacity of 31.84 GiB of which 0 bytes is free. Process 2054 has 17179869184.00 GiB memory in use. Of the allocated memory 42.87 GiB is allocated by PyTorch, and 11.88 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+[2026-09-18T04:02:15.000450+00:00] Part D | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | naive | S=12288 | SUCCESS | latency=14833.7021 ms | peak=73.3439 GiB
+[2026-09-18T04:03:43.478474+00:00] ========================================================================================
+[2026-09-18T04:03:43.478613+00:00] Notebook started | GPU=NVIDIA GeForce RTX 5090 | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | Driver CUDA=not parsed | PyTorch CUDA build=12.8
+[2026-09-18T04:03:43.594844+00:00] Part D fused backend selected: torch.nn.attention.FLASH_ATTENTION
+[2026-09-18T04:03:44.064678+00:00] Part D | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | naive | S=512 | SUCCESS | latency=0.2261 ms | peak=0.1642 GiB
+[2026-09-18T04:03:44.225748+00:00] Part D | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | naive | S=1024 | SUCCESS | latency=1.2945 ms | peak=0.5704 GiB
+[2026-09-18T04:03:44.437432+00:00] Part D | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | naive | S=2048 | SUCCESS | latency=4.9932 ms | peak=2.1329 GiB
+[2026-09-18T04:03:44.768230+00:00] Part D | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | naive | S=4096 | SUCCESS | latency=21.6418 ms | peak=8.2579 GiB
+[2026-09-18T04:03:46.950170+00:00] Part D | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | naive | S=8192 | SUCCESS | latency=413.5125 ms | peak=32.5079 GiB
+[2026-09-18T04:04:02.307314+00:00] Part D | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | naive | S=16384 | OOM/FAIL | OutOfMemoryError: CUDA out of memory. Tried to allocate 64.00 GiB. GPU 0 has a total capacity of 31.84 GiB of which 0 bytes is free. Process 2054 has 17179869184.00 GiB memory in use. Including non-PyTorch memory, this process has 17179869184.00 GiB memory in use. Of the allocated memory 64.76 GiB is allocated by PyTorch, and 11.88 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+[2026-09-18T04:04:18.493203+00:00] Part D | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | naive | S=12288 | SUCCESS | latency=12822.1025 ms | peak=72.7579 GiB
+[2026-09-18T04:04:42.446011+00:00] Part D | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | naive | S=14336 | OOM/FAIL | OutOfMemoryError: CUDA out of memory. Tried to allocate 49.00 GiB. GPU 0 has a total capacity of 31.84 GiB of which 0 bytes is free. Process 2054 has 17179869184.00 GiB memory in use. Including non-PyTorch memory, this process has 17179869184.00 GiB memory in use. Of the allocated memory 49.66 GiB is allocated by PyTorch, and 11.88 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+[2026-09-18T04:05:07.275786+00:00] Part D | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | naive | S=13312 | OOM/FAIL | OutOfMemoryError: CUDA out of memory. Tried to allocate 42.25 GiB. GPU 0 has a total capacity of 31.84 GiB of which 0 bytes is free. Process 2054 has 17179869184.00 GiB memory in use. Including non-PyTorch memory, this process has 17179869184.00 GiB memory in use. Of the allocated memory 42.87 GiB is allocated by PyTorch, and 11.88 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+[2026-09-18T04:05:33.187699+00:00] Part D | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | naive | S=12800 | OOM/FAIL | OutOfMemoryError: CUDA out of memory. Tried to allocate 39.06 GiB. GPU 0 has a total capacity of 31.84 GiB of which 0 bytes is free. Process 2054 has 17179869184.00 GiB memory in use. Including non-PyTorch memory, this process has 17179869184.00 GiB memory in use. Of the allocated memory 39.66 GiB is allocated by PyTorch, and 11.88 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+[2026-09-18T04:05:34.417093+00:00] Naive OOM boundary result: {'largest_success': 12288, 'smallest_failure': 12800, 'step': 512, 'status': 'bracketed'}
+[2026-09-18T04:05:34.744001+00:00] Part D quadratic fit: memory_GiB = 4.768371582031e-07*S^2 + 6.103515625000e-05*S + 7.934570e-03
+[2026-09-18T04:05:34.744525+00:00] Part D S^2 coefficient check | measured=4.768371582031e-07 | theory=4.768371582031e-07 GiB/token^2 | ratio=1.000000 | error=0.000%
+[2026-09-18T04:05:34.745171+00:00] The S^2 coefficient is compared directly with the closed-form cost of holding the score and softmax matrices simultaneously.
+[2026-09-18T04:05:34.821671+00:00] Part D | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | fused:torch.nn.attention.FLASH_ATTENTION | S=512 | SUCCESS | latency=0.0910 ms | peak=0.0394 GiB
+[2026-09-18T04:05:34.954029+00:00] Part D | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | fused:torch.nn.attention.FLASH_ATTENTION | S=1024 | SUCCESS | latency=0.2139 ms | peak=0.0709 GiB
+[2026-09-18T04:05:35.091315+00:00] Part D | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | fused:torch.nn.attention.FLASH_ATTENTION | S=2048 | SUCCESS | latency=0.6957 ms | peak=0.1339 GiB
+[2026-09-18T04:05:35.236088+00:00] Part D | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | fused:torch.nn.attention.FLASH_ATTENTION | S=4096 | SUCCESS | latency=2.4428 ms | peak=0.2599 GiB
+[2026-09-18T04:05:35.394230+00:00] Part D | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | fused:torch.nn.attention.FLASH_ATTENTION | S=8192 | SUCCESS | latency=9.5010 ms | peak=0.5118 GiB
+[2026-09-18T04:05:35.649382+00:00] Part D | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | fused:torch.nn.attention.FLASH_ATTENTION | S=16384 | SUCCESS | latency=38.3184 ms | peak=1.0157 GiB
+[2026-09-18T04:05:36.029401+00:00] Part D | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | fused:torch.nn.attention.FLASH_ATTENTION | S=32768 | SUCCESS | latency=160.6391 ms | peak=2.0236 GiB
+[2026-09-18T04:05:36.892805+00:00] Part D | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | fused:torch.nn.attention.FLASH_ATTENTION | S=65536 | SUCCESS | latency=635.3680 ms | peak=4.0392 GiB
+[2026-09-18T04:05:36.982573+00:00] Fused OOM boundary result: {'largest_success': 65536, 'smallest_failure': None, 'step': 8192, 'status': 'no failure observed through search cap 65536'}
+[2026-09-18T04:05:37.029603+00:00] Part D speedup | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | S=512 | 2.484x
+[2026-09-18T04:05:37.029723+00:00] Part D speedup | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | S=1024 | 6.053x
+[2026-09-18T04:05:37.029774+00:00] Part D speedup | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | S=2048 | 7.177x
+[2026-09-18T04:05:37.029815+00:00] Part D speedup | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | S=4096 | 8.859x
+[2026-09-18T04:05:37.029850+00:00] Part D speedup | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | S=8192 | 43.523x
+[2026-09-18T04:05:37.030896+00:00] Fused-kernel explanation:
+[2026-09-18T04:05:37.030941+00:00]   The naive implementation explicitly writes the O(S^2) score matrix to global memory and then materializes a second O(S^2) softmax/probability matrix before multiplying by V.
+[2026-09-18T04:05:37.030971+00:00]   The fused/memory-efficient kernel tiles Q, K, and V and avoids storing the full S-by-S attention matrix in HBM.
+[2026-09-18T04:05:37.031000+00:00]   No fused-attention failure was observed through the explicit search cap of 65536 tokens. This is not claimed as the fused-attention limit; at very large S, Q/K/V/output storage can become the binding memory cost.
+[2026-09-18T04:05:37.218709+00:00] Saved /content/hw2_5_artifacts/figures/part_d_naive_vs_fused_memory.png
+[2026-09-18T04:13:17.035719+00:00] ========================================================================================
+[2026-09-18T04:13:17.037188+00:00] Notebook started | GPU=NVIDIA GeForce RTX 5090 | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | Driver CUDA=not parsed | PyTorch CUDA build=12.8
+[2026-09-18T04:13:17.288108+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | FP32 N=1024 | reps=200 | median=0.0480 ms | TFLOPS=44.784 | %peak=42.73 | CV=49.26% | IQR=0.0044 ms
+[2026-09-18T04:13:17.670635+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | FP32 N=4096 | reps=100 | median=2.1416 ms | TFLOPS=64.175 | %peak=61.24 | CV=10.95% | IQR=0.3601 ms
+[2026-09-18T04:13:18.492431+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | FP32 N=8192 | reps=30 | median=16.6526 ms | TFLOPS=66.027 | %peak=63.00 | CV=3.54% | IQR=0.6604 ms
+[2026-09-18T04:13:21.488142+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | FP32 N=16384 | reps=10 | median=133.5045 ms | TFLOPS=65.886 | %peak=62.87 | CV=2.35% | IQR=4.9416 ms
+[2026-09-18T04:13:21.638274+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | TF32 N=1024 | reps=200 | median=0.0309 ms | TFLOPS=69.435 | %peak=66.25 | CV=49.55% | IQR=0.0021 ms
+[2026-09-18T04:13:21.911849+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | TF32 N=4096 | reps=100 | median=1.3315 ms | TFLOPS=103.222 | %peak=98.49 | CV=2.58% | IQR=0.0061 ms
+[2026-09-18T04:13:22.432342+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | TF32 N=8192 | reps=30 | median=9.6649 ms | TFLOPS=113.763 | %peak=108.55 | CV=0.45% | IQR=0.0464 ms
+[2026-09-18T04:13:24.138507+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | TF32 N=16384 | reps=10 | median=74.6032 ms | TFLOPS=117.905 | %peak=112.50 | CV=0.10% | IQR=0.1042 ms
+[2026-09-18T04:13:24.475854+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | FP16 N=1024 | reps=200 | median=0.0196 ms | TFLOPS=109.655 | %peak=52.34 | CV=109.72% | IQR=0.0022 ms
+[2026-09-18T04:13:24.695895+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | FP16 N=4096 | reps=100 | median=0.6484 ms | TFLOPS=211.982 | %peak=101.18 | CV=2.89% | IQR=0.0026 ms
+[2026-09-18T04:13:25.020620+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | FP16 N=8192 | reps=30 | median=5.0804 ms | TFLOPS=216.422 | %peak=103.30 | CV=2.57% | IQR=0.1408 ms
+[2026-09-18T04:13:25.993875+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | FP16 N=16384 | reps=10 | median=40.3783 ms | TFLOPS=217.842 | %peak=103.98 | CV=0.11% | IQR=0.0310 ms
+[2026-09-18T04:13:26.370936+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | BF16 N=1024 | reps=200 | median=0.0270 ms | TFLOPS=79.419 | %peak=37.91 | CV=108.82% | IQR=0.0028 ms
+[2026-09-18T04:13:26.586843+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | BF16 N=4096 | reps=100 | median=0.7513 ms | TFLOPS=182.944 | %peak=87.32 | CV=1.44% | IQR=0.0051 ms
+[2026-09-18T04:13:26.900570+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | BF16 N=8192 | reps=30 | median=4.7999 ms | TFLOPS=229.069 | %peak=109.34 | CV=1.70% | IQR=0.1358 ms
+[2026-09-18T04:13:27.821236+00:00] Part B | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | BF16 N=16384 | reps=10 | median=38.0429 ms | TFLOPS=231.215 | %peak=110.37 | CV=0.24% | IQR=0.0670 ms
+[2026-09-18T04:13:28.088024+00:00] Saved /content/hw2_5_artifacts/figures/part_b_tflops_vs_matrix_size.png
+[2026-09-18T04:13:28.097945+00:00] Part B plateau | BF16 | N=8192 | tail spread=0.93% | max CV=1.70%
+[2026-09-18T04:13:28.098178+00:00] Part B plateau | FP16 | N=4096 | tail spread=2.72% | max CV=2.89%
+[2026-09-18T04:13:28.098236+00:00] Part B plateau | FP32 | N=8192 | tail spread=0.21% | max CV=3.54%
+[2026-09-18T04:13:28.098279+00:00] Part B plateau | TF32 | N=8192 | tail spread=3.58% | max CV=0.45%
+[2026-09-18T04:13:28.219338+00:00] No usable FP8 matmul path was exposed by this software stack.
+[2026-09-18T04:13:28.219397+00:00]   torch.mm FP8 failed: NotImplementedError: "addmm_cuda" not implemented for 'Float8_e4m3fn'
+[2026-09-18T04:13:28.219411+00:00]   torch._scaled_mm FP8 failed: RuntimeError: CUDA error: CUBLAS_STATUS_NOT_SUPPORTED when calling `cublasLtMatmulAlgoGetHeuristic( ltHandle, computeDesc.descriptor(), Adesc.descriptor(), Bdesc.descriptor(), Cdesc.descriptor(), Ddesc.descriptor(), preference.descriptor(), 1, &heuristicResult, &returnedResult)`
+[2026-09-18T04:13:28.399024+00:00] Part C memory-bound | UUID=GPU-10848bc4-988f-587b-68c0-ece9deaf4e09 | elements=256000000 | median=1.9591 ms | effective=1568.06 GB/s | 87.50% of specified
+[2026-09-18T04:13:28.548903+00:00] Part C ridge point = 116.91 FLOP/byte
+[2026-09-18T04:13:28.549142+00:00] Part C memory add AI = 0.08333 FLOP/byte -> bandwidth-bound side
+[2026-09-18T04:13:28.549198+00:00] Part C matmul AI = 2730.67 FLOP/byte -> compute-bound side
+[2026-09-18T04:15:10.157494+00:00] ========================================================================================
+[2026-09-18T04:15:10.158187+00:00] HW2.5 Notebook 00 started
+[2026-09-18T04:15:10.158274+00:00] Python: 3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]
+[2026-09-18T04:15:10.159987+00:00] Platform: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[2026-09-18T04:15:10.162228+00:00] PyTorch: 2.11.0+cu128
+[2026-09-18T04:15:10.162586+00:00] PyTorch CUDA build: 12.8
+[2026-09-18T04:15:10.162693+00:00] CUDA available: True
+[2026-09-18T04:15:10.166313+00:00] Torch visible GPU 0: NVIDIA GeForce RTX 5090
+[2026-09-18T04:15:10.377947+00:00] Complete nvidia-smi -q saved to: /content/hw2_5_artifacts/nvidia_smi_q_gpu0_20260918_041510.txt
+[2026-09-18T04:15:10.378017+00:00] GPU index: 0
+[2026-09-18T04:15:10.378053+00:00] GPU name: NVIDIA GeForce RTX 5090
+[2026-09-18T04:15:10.378317+00:00] GPU UUID: GPU-10848bc4-988f-587b-68c0-ece9deaf4e09
+[2026-09-18T04:15:10.378367+00:00] Driver version: 610.60
+[2026-09-18T04:15:10.378401+00:00] Driver-supported CUDA version: not parsed
+[2026-09-18T04:15:10.378433+00:00] VRAM: 32607 MiB
+[2026-09-18T04:15:10.378498+00:00] Reported power limit: 575.00 W
+[2026-09-18T04:15:10.487650+00:00] Vendor specification:
+[2026-09-18T04:15:10.487785+00:00]   architecture: NVIDIA Blackwell
+[2026-09-18T04:15:10.487803+00:00]   memory_type: 32 GB GDDR7
+[2026-09-18T04:15:10.487840+00:00]   memory_bandwidth_GBs: 1792.0
+[2026-09-18T04:15:10.487857+00:00]   tensor_core_generation: 5th Generation
+[2026-09-18T04:15:10.487873+00:00]   tensor_supported_precisions: ['TF32', 'FP16', 'BF16', 'FP8', 'FP6', 'FP4', 'INT8']
+[2026-09-18T04:15:10.487887+00:00]   theoretical_tflops_dense: {'FP32': 104.8, 'TF32': 104.8, 'FP16': 209.5, 'BF16': 209.5, 'FP8': 419.0, 'FP4': 1676.0}
+[2026-09-18T04:15:10.487896+00:00]   source: NVIDIA RTX Blackwell GPU Architecture whitepaper, Appendix A
+[2026-09-18T04:15:10.487904+00:00]   source_url: https://images.nvidia.com/aem-dam/Solutions/geforce/blackwell/nvidia-rtx-blackwell-gpu-architecture.pdf
+[2026-09-18T04:15:10.487912+00:00]   source_accessed_utc: 2026-09-17
+[2026-09-18T04:15:10.487921+00:00]   supported_for_hw25: True
+[2026-09-18T04:15:10.487976+00:00] GPU NVIDIA GeForce RTX 5090 satisfies the HW2.5 hardware requirement.
+[2026-09-18T04:15:10.493184+00:00] Reservation record: /content/hw2_5_artifacts/reservation_gpu_hours.md
+[2026-09-18T04:15:11.783208+00:00] Saved pip_freeze.txt and environment.json

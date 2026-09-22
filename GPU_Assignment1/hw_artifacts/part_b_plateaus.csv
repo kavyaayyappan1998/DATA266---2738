@@ -1,0 +1,5 @@
+precision,observed_max_tflops,plateau_status,plateau_N,tail_spread_pct,tail_max_cv_pct,criterion
+BF16,231.21512514730878,reached,8192,0.932304208842772,1.6964961857396073,tail spread <=10% and all tail CV <=5%
+FP16,217.8419826910299,reached,4096,2.7203244040761327,2.890078060967166,tail spread <=10% and all tail CV <=5%
+FP32,66.02658163796856,reached,8192,0.21299660282090216,3.5435218500322483,tail spread <=10% and all tail CV <=5%
+TF32,117.90503811510156,reached,8192,3.575967822536832,0.4469338778538138,tail spread <=10% and all tail CV <=5%

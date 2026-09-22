@@ -1,0 +1,18 @@
+{
+  "uuid": "GPU-10848bc4-988f-587b-68c0-ece9deaf4e09",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "memory_operation": "FP32 elementwise add",
+  "memory_numel": 256000000,
+  "memory_median_ms": 1.9591040015220642,
+  "effective_bandwidth_GBs": 1568.0637667083045,
+  "specified_bandwidth_GBs": 1792.0,
+  "bandwidth_pct_specified": 87.50355841006163,
+  "memory_arithmetic_intensity_flop_per_byte": 0.08333333333333333,
+  "memory_roofline_side": "bandwidth-bound side",
+  "compute_operation": "FP16 matmul N=8192",
+  "compute_median_ms": 4.793904066085815,
+  "compute_tflops": 229.35620167170816,
+  "compute_arithmetic_intensity_flop_per_byte": 2730.6666666666665,
+  "compute_roofline_side": "compute-bound side",
+  "ridge_point_flop_per_byte": 116.90848214285714
+}

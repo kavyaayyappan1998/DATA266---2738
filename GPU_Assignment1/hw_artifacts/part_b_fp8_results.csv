@@ -1,0 +1,2 @@
+uuid,gpu,precision,backend,status,error
+GPU-10848bc4-988f-587b-68c0-ece9deaf4e09,NVIDIA GeForce RTX 5090,FP8_e4m3fn,,unavailable,"torch.mm FP8 failed: NotImplementedError: ""addmm_cuda"" not implemented for 'Float8_e4m3fn' | torch._scaled_mm FP8 failed: RuntimeError: CUDA error: CUBLAS_STATUS_NOT_SUPPORTED when calling `cublasLtMatmulAlgoGetHeuristic( ltHandle, computeDesc.descriptor(), Adesc.descriptor(), Bdesc.descriptor(), Cdesc.descriptor(), Ddesc.descriptor(), preference.descriptor(), 1, &heuristicResult, &returnedResult)`"

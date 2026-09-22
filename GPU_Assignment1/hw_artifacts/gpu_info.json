@@ -1,0 +1,41 @@
+{
+  "name": "NVIDIA GeForce RTX 5090",
+  "nvidia_smi_index": 0,
+  "uuid": "GPU-10848bc4-988f-587b-68c0-ece9deaf4e09",
+  "driver_version": "610.60",
+  "driver_cuda_version": "not parsed",
+  "pytorch_version": "2.11.0+cu128",
+  "pytorch_cuda_version": "12.8",
+  "vram_mib": 32607.0,
+  "power_limit_w": 575.0,
+  "hw25_supported_gpu": true,
+  "card_specs": {
+    "architecture": "NVIDIA Blackwell",
+    "memory_type": "32 GB GDDR7",
+    "memory_bandwidth_GBs": 1792.0,
+    "tensor_core_generation": "5th Generation",
+    "tensor_supported_precisions": [
+      "TF32",
+      "FP16",
+      "BF16",
+      "FP8",
+      "FP6",
+      "FP4",
+      "INT8"
+    ],
+    "theoretical_tflops_dense": {
+      "FP32": 104.8,
+      "TF32": 104.8,
+      "FP16": 209.5,
+      "BF16": 209.5,
+      "FP8": 419.0,
+      "FP4": 1676.0
+    },
+    "source": "NVIDIA RTX Blackwell GPU Architecture whitepaper, Appendix A",
+    "source_url": "https://images.nvidia.com/aem-dam/Solutions/geforce/blackwell/nvidia-rtx-blackwell-gpu-architecture.pdf",
+    "source_accessed_utc": "2026-09-17",
+    "supported_for_hw25": true
+  },
+  "captured_at_utc": "2026-09-18T04:15:10.402915+00:00",
+  "nvidia_smi_q_file": "/content/hw2_5_artifacts/nvidia_smi_q_gpu0_20260918_041510.txt"
+}

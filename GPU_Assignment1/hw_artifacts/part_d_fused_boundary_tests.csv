@@ -1,0 +1,3 @@
+uuid,gpu,implementation,batch,heads,head_dim,dtype,sequence_length,success,latency_reps,median_latency_ms,mean_latency_ms,peak_memory_bytes,peak_memory_GiB,error
+GPU-10848bc4-988f-587b-68c0-ece9deaf4e09,NVIDIA GeForce RTX 5090,fused:torch.nn.attention.FLASH_ATTENTION,4,32,64,torch.float16,32768,True,1,160.63906860351562,160.63906860351562,2172781568,2.0235605239868164,
+GPU-10848bc4-988f-587b-68c0-ece9deaf4e09,NVIDIA GeForce RTX 5090,fused:torch.nn.attention.FLASH_ATTENTION,4,32,64,torch.float16,65536,True,1,635.3679809570312,635.3679809570312,4337042432,4.039185523986816,

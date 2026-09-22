@@ -1,0 +1,11 @@
+{
+  "uuid": "GPU-10848bc4-988f-587b-68c0-ece9deaf4e09",
+  "quadratic_coefficient_GiB_per_token2": 4.76837158203125e-07,
+  "theoretical_quadratic_coefficient_GiB_per_token2": 4.76837158203125e-07,
+  "quadratic_coefficient_ratio_measured_to_theory": 1.0,
+  "quadratic_coefficient_error_pct": 0.0,
+  "linear_coefficient_GiB_per_token": 6.1035156250002e-05,
+  "intercept_GiB": 0.007934570312500852,
+  "fit_expression": "memory_GiB = 4.768371582031e-07*S^2 + 6.103515625000e-05*S + 7.934570e-03",
+  "theory_expression": "2 * B * H * sizeof(dtype) / 2^30"
+}

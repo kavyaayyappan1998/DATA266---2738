@@ -1,0 +1,2 @@
+RUN ON YOUR GPU: nvidia-smi -L | tee GPU_INFO.txt
+This is a placeholder, not hardware evidence.

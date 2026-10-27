@@ -1,0 +1,20 @@
+# REQUIRED: Set these from your HW4.a instructions/instructor. Null values intentionally block training.
+seed: null
+slice: null
+csv_path: data/twitter.csv
+text_column: text
+label_column: label
+# Optional: label strings are supported; numeric labels must be 0..K-1.
+model_name: bert-base-uncased
+max_length: 128
+batch_size: 16
+epochs: 3
+learning_rate: 0.00002
+weight_decay: 0.01
+val_fraction: 0.15
+test_fraction: 0.15
+# vLLM model must be a CAUSAL language model, NOT the BERT classifier.
+serving_model: Qwen/Qwen2.5-7B-Instruct
+serving_prompt: Explain GPU memory optimization in two sentences.
+serving_max_tokens: 64
+serving_repeats: 5

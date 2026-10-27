@@ -1,0 +1,9 @@
+{
+  "wall_seconds": 38.82726317795459,
+  "peak_gpu_gb": 2.4763,
+  "best_val_epoch": 3,
+  "last_epoch": 3,
+  "epochs_after_best": 0,
+  "best_val_accuracy": 0.668,
+  "gpu_name": "NVIDIA GeForce RTX 4090"
+}

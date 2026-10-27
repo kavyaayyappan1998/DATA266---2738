@@ -1,0 +1,36 @@
+{
+  "worst_class": "0",
+  "examples": [
+    {
+      "text": "BREAKING NEWS: #Arrow will not be seen tonight in Illinois or Indiana due to the Chicago Bulls opening game. It will air on Saturday. :(",
+      "actual": "0",
+      "predicted": "1",
+      "diagnosis": "REQUIRED: add a one-line human diagnosis"
+    },
+    {
+      "text": "\"RT @user Final Destination 5? Pretty sure \\\"\"final\\\"\" means the last one...not the 5th one.\"",
+      "actual": "0",
+      "predicted": "1",
+      "diagnosis": "REQUIRED: add a one-line human diagnosis"
+    },
+    {
+      "text": "@user @user  said you made Keith Richards look baby faced.  *May not have actually said this.",
+      "actual": "0",
+      "predicted": "1",
+      "diagnosis": "REQUIRED: add a one-line human diagnosis"
+    },
+    {
+      "text": "Instead of being aghast at the spectacle of Trump's transition, liberals should try a more level-headed approach.\u2026",
+      "actual": "0",
+      "predicted": "1",
+      "diagnosis": "REQUIRED: add a one-line human diagnosis"
+    },
+    {
+      "text": "@user Does anyone else find it odd #McCann jumped on April Jones bandwagon,but didnt say  word about Tia Sharp where FAMILY involved ?\"",
+      "actual": "0",
+      "predicted": "1",
+      "diagnosis": "REQUIRED: add a one-line human diagnosis"
+    }
+  ],
+  "available_mistakes": 59
+}

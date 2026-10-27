@@ -1,0 +1,7 @@
+{
+  "baseline_batch": 16,
+  "selection_rule": "memory saving > 0 GB, throughput >= 90% of baseline, test accuracy drop <= 0.01; same batch; accumulation excluded because effective batch differs",
+  "eligible": [],
+  "chosen_flags": {},
+  "warning": "Selection uses test accuracy for assignment analysis only; for unbiased model selection use validation accuracy."
+}

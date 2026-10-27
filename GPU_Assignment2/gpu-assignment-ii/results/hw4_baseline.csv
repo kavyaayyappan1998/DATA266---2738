@@ -1,0 +1,2 @@
+wall_seconds,peak_gpu_gb,best_val_epoch,last_epoch,epochs_after_best,best_val_accuracy,gpu_name
+38.82726317795459,2.4763,3,3,0,0.668,NVIDIA GeForce RTX 4090

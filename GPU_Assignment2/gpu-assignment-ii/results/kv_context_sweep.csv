@@ -1,0 +1,2 @@
+max_model_len,batch,requested_prefix_tokens,status,return_code,gpu_blocks_reported,block_size_reported,log_file,elapsed_s
+512,8,416,FAILED,1,,,results/kv_logs/context_512.log,9.78

@@ -1,0 +1,7 @@
+{
+  "vae_reconstruction_mse": 0.0007897214964032173,
+  "heldout_noise_mse": 0.09427326302975417,
+  "epochs_completed": 50,
+  "final_train_noise_mse": 0.10014121630191802,
+  "guidance_scale": 7.5
+}

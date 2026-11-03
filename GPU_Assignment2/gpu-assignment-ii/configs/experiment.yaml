@@ -1,6 +1,6 @@
 # REQUIRED: Set these from your HW4.a instructions/instructor. Null values intentionally block training.
-SEED = 2738
-SLICE = 0
+seed = 2738
+slice = 0
 csv_path: data/twitter.csv
 text_column: text
 label_column: label

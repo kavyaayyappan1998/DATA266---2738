@@ -1,6 +1,3 @@
-GPU ASSIGNMENT II — HW4.a + HW4.5
-================================
-
 PROJECT OVERVIEW
 This project reproduces BERT fine-tuning and evaluates GPU training and inference behavior, including batch-size scaling, memory optimization techniques, Hugging Face versus vLLM serving, and a vLLM context-length/KV-cache sweep.
 

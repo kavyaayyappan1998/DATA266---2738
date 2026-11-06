@@ -1,0 +1,14 @@
+technique,batch,effective_batch,amp,checkpoint,optimizer8,accum,epochs_completed,optimizer_steps,train_samples,train_seconds,wall_seconds_including_evaluation,samples_per_second,peak_gb,eval_accuracy,status
+baseline_scaling,16,16,False,False,False,1.0,1.0,219.0,3500.0,11.63,12.821,300.949,2.4768,0.6653333333333333,ok
+baseline_scaling,32,32,False,False,False,1.0,1.0,110.0,3500.0,7.833,8.892,446.801,3.7374,0.636,ok
+baseline_scaling,64,64,False,False,False,1.0,1.0,55.0,3500.0,7.163,8.165,488.625,6.1355,0.5666666666666667,ok
+baseline_scaling,128,128,False,False,False,1.0,1.0,28.0,3500.0,6.785,7.8,515.863,11.0256,0.5453333333333333,ok
+baseline_scaling,256,256,False,False,False,1.0,1.0,14.0,3500.0,6.481,7.484,540.018,20.6844,0.524,ok
+baseline_scaling,512,512,,,,,,,,,,,,,OOM
+baseline_scaling,16,16,False,False,False,1.0,1.0,219.0,3500.0,10.507,11.701,333.102,2.4768,0.7053333333333334,ok
+baseline_scaling,32,32,False,False,False,1.0,1.0,110.0,3500.0,7.847,8.877,446.017,3.7374,0.6946666666666667,ok
+baseline_scaling,64,64,False,False,False,1.0,1.0,55.0,3500.0,7.197,8.2,486.304,6.1355,0.6533333333333333,ok
+baseline_scaling,128,128,False,False,False,1.0,1.0,28.0,3500.0,6.853,7.845,510.744,11.0256,0.4946666666666666,ok
+baseline_scaling,256,256,False,False,False,1.0,1.0,14.0,3500.0,14.951,19.043,234.099,20.6844,0.4573333333333333,ok
+baseline_scaling,512,512,False,False,False,1.0,1.0,7.0,3500.0,232.844,242.777,15.032,40.0313,0.4493333333333333,ok
+baseline_scaling,1024,1024,False,False,False,1.0,1.0,4.0,3500.0,937.929,945.521,3.732,78.7008,0.37733333333333335,ok

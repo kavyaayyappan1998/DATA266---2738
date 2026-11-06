@@ -1,0 +1,11 @@
+{
+  "start_zero_based_inclusive": 0,
+  "end_zero_based_inclusive": 4999,
+  "rows_before_dropna": 5000,
+  "rows_after_dropna": 5000,
+  "label_map": {
+    "0": 0,
+    "1": 1,
+    "2": 2
+  }
+}

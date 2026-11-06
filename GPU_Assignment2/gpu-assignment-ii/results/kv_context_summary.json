@@ -1,0 +1,6 @@
+{
+  "longest_successful_max_model_len": null,
+  "batch": 8,
+  "tested_up_to_model_limit": 32768,
+  "caveat": "If no failure before model limit, report model context limit, not GPU OOM; logs preserve startup cache-block messages. GPU reserved memory is not KV-cache usage."
+}

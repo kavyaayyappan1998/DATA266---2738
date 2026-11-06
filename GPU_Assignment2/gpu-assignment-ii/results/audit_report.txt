@@ -1,0 +1,23 @@
+PASS | Exact dataset fingerprint | results/dataset_lock.json
+PASS | Exact row range | results/row_range.json
+PASS | HW4.a training baseline | results/hw4_baseline.json
+PASS | Per-epoch curves | results/training_history.csv
+PASS | Confusion matrix | figures/confusion_matrix.png
+PASS | Full-epoch batch scaling | results/full_batch_scaling.csv
+PASS | Full-epoch memory comparison | results/full_memory_comparison.csv
+PASS | Serving benchmarks | results/serving_metrics.csv
+PASS | GPU identification | GPU_INFO.txt
+PASS | Metrics report | METRICS.md
+PASS | Run log | RUN_LOG.txt
+PASS | AI disclosure | AI_USE.md
+PASS | GPU-hour record | gpu_hours.csv
+PASS | results/full_batch_scaling.csv | []
+PASS | results/full_memory_comparison.csv | []
+PASS | results/serving_metrics.csv | []
+PASS | Instructor-approved optional Part C statement
+MANUAL REVIEW | Five worst-class misclassifications each need an original one-line diagnosis
+MANUAL REVIEW | Training past best validation epoch: describe overfitting and cost
+MANUAL REVIEW | Confirm full test-set evaluation, correct units, consistent scales, no fabricated measurements
+MANUAL REVIEW | Serving batch completion latency is not independent per-request latency; disclose measurement limitation
+MANUAL REVIEW | KV-cache proxy is not isolated KV-cache bytes; do not label it as direct KV-cache measurement
+MANUAL REVIEW | Two UUID captures, reservation record, tagged repository and instructor one-GPU clarification

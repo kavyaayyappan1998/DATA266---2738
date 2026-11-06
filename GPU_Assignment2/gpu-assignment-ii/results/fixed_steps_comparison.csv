@@ -1,0 +1,7 @@
+technique,batch,effective_batch,amp,checkpoint,optimizer8,accum,epochs_completed,optimizer_steps,train_samples,train_seconds,wall_seconds_including_evaluation,samples_per_second,peak_gb,eval_accuracy,status,details
+baseline,16,16.0,False,False,False,1.0,1.0,50.0,800.0,4.517,5.764,177.127,2.4768,0.5253333333333333,ok,
+mixed_precision,16,16.0,True,False,False,1.0,1.0,50.0,800.0,2.927,3.689,273.327,2.2549,0.504,ok,
+gradient_checkpointing,16,16.0,False,True,False,1.0,1.0,50.0,800.0,2.972,4.187,269.138,2.0703,0.5253333333333333,ok,
+gradient_accumulation,16,64.0,False,False,False,4.0,1.0,50.0,3200.0,8.081,9.317,395.982,2.8913,0.6226666666666667,ok,
+8bit_optimizer,16,16.0,False,False,True,1.0,1.0,50.0,800.0,2.648,3.85,302.084,1.8764,0.5346666666666666,ok,
+best_combination,16,16.0,False,True,True,1.0,1.0,50.0,800.0,3.093,4.308,258.638,1.082,0.5346666666666666,ok,

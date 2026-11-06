@@ -1,0 +1,9 @@
+{
+  "dataset_name": "twitter.csv",
+  "dataset_sha256": "655de5e6212bb9d6725b02759da84652e102e876d527e466c867d2f9605a6774",
+  "slice": 0,
+  "seed": 2738,
+  "end_zero_based_inclusive": 4999,
+  "text_column": "text",
+  "label_column": "label"
+}

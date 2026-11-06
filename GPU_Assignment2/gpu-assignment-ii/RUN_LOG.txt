@@ -1,0 +1,74 @@
+RUN LOG — pod start/stop timestamps, setup, OOM failures, and changes made during experiments.
+
+Times are UTC. Entries marked [FILL IN] need the author's own records (pod console / billing page); they cannot be recovered from the result files.
+
+================================================================
+SESSION 1 — 2026-10-27 — GPU-49f6e7a5-0d30-4554-8244-7a00552b9b36
+================================================================
+Pod start: [FILL IN]
+Pod stop:  [FILL IN]
+Reservation / pod ID: [FILL IN]
+
+Setup
+- One NVIDIA GeForce RTX 4090 (24 GB).
+- Dataset twitter.csv, SLICE 0, rows 0-4999, 70/15/15 split (3,500 / 750 / 750).
+- SEED was the placeholder 42 in this session (per the notebook header). Training results from this session are superseded by session 2 and are not used in METRICS.md; only the vLLM serving rows are.
+- Serving model Qwen/Qwen2.5-7B-Instruct, bfloat16; vLLM 0.32.0, max_model_len 512, enforce_eager on.
+
+Runs
+- HW4.a baseline, batch 16, 3 epochs: 38.8 s wall, 2.48 GB peak, best validation accuracy 0.668 at epoch 3.
+- Baseline batch scaling, 1 epoch, batch 16-256: completed (300.9 to 540.0 samples/s, 2.48 to 20.68 GB).
+- Technique comparison, 3 epochs: baseline, mixed precision, gradient checkpointing, gradient accumulation completed.
+- Serving: Hugging Face batch 1 (41.2 tokens/s); vLLM batch 1, 8, 32 (62.0, 466.1, 1648.5 tokens/s). vLLM engine start logged 2026-10-27 21:21.
+
+Failures
+- OOM: baseline_scaling batch 512 (1 epoch).
+- OOM: baseline, mixed_precision and best_combination at batch 512 (3 epochs).
+- 8bit_optimizer: ERROR "No module named 'bitsandbytes'" — technique not measured this session.
+- best_combination ran with no technique flags set (results identical to baseline), because the 8-bit optimizer was unavailable.
+- Serving attempts before the environment was fixed: vLLM "No module named 'vllm'"; Hugging Face "libcudart.so.13: cannot open shared object file" (3 attempts). These rows are kept in results/serving_metrics_original_backup.csv.
+
+2026-10-27T21:37:47.821728+00:00 | evidence captured | GPU 0: NVIDIA GeForce RTX 4090 (UUID: GPU-49f6e7a5-0d30-4554-8244-7a00552b9b36) | 32 measured timing rows; see gpu_hours.csv
+
+================================================================
+SESSION 2 — 2026-11-03/04 — GPU-5a5ec28e-51c2-7128-c85d-2e75b9b3cd39
+================================================================
+Pod start: [FILL IN]
+Pod stop:  [FILL IN]
+Reservation / pod ID: [FILL IN]
+(Result files from this session were last written between about 2026-11-03 17:48 and 2026-11-04 00:35; this is file activity, not pod start/stop.)
+
+Setup
+- A different physical RTX 4090 from session 1 (new pod), still one GPU.
+- SEED corrected from 42 to 2738 (last four digits of SJSU ID). Split and model initialisation change with the seed, so every training result was regenerated. Dataset file and slice unchanged.
+
+Changes since session 1
+- Installed bitsandbytes; 8-bit optimizer now runs.
+- Added batch 512 and 1024 to every technique.
+- Added the 50-step comparison (results/fixed_steps_comparison.csv).
+- Result CSVs were appended to, not replaced, so they contain session 1 rows followed by session 2 rows.
+
+Runs
+- HW4.a baseline, batch 16, 3 epochs: 34.9 s wall, 2.48 GB peak, best validation accuracy 0.691 at epoch 1 (2 epochs trained past best). This is the run reported in METRICS.md.
+- Test evaluation: 750 rows, accuracy 0.705; confusion matrix and classification report written.
+- Baseline batch scaling, 1 epoch, batch 16-1024.
+- Technique comparison, 3 epochs, batch 16-1024: baseline, mixed precision, gradient checkpointing, 8-bit optimizer, best combination; gradient accumulation at batch 16 x 4.
+- 50-step comparison at batch 16, all six configurations.
+- Hugging Face serving, batch 1, repeated (34.8 to 43.4 tokens/s).
+
+Failures and anomalies
+- Batch 512 and 1024 did not raise OOM this session but reported 26.4 to 78.7 GB peak allocated on a 24 GB card and ran at 3.5 to 16.8 samples/s (single runs took up to 2,998 s). Affected: baseline, mixed_precision, 8bit_optimizer, best_combination, baseline_scaling. Treated as invalid for max-batch claims. Gradient checkpointing stayed within 24 GB at both sizes (7.58 and 13.91 GB).
+- baseline_scaling batch 256 (1 epoch) ran at 234.1 samples/s against 540.0 in session 1; unexplained outlier.
+- best_combination full-epoch rows ran with optimizer8 only (checkpoint flag off), although combination_selection.json selects checkpoint + optimizer8. Only the 50-step row used both flags.
+- vLLM would not start: "RuntimeError: Engine core initialization failed", root cause "FileNotFoundError: [Errno 2] No such file or directory: '/usr/bin/gcc'" (2026-11-04 00:32). All vLLM serving rows from this session are errors.
+- KV context sweep (max_model_len 512, batch 8, 416-token prefix): 4 attempts, all FAILED for the same gcc reason. No context limit measured; kv_context_summary.json has longest_successful_max_model_len = null.
+- Hugging Face serving rows from this session record 0.0 GB for nvidia-smi GPU memory (reading not captured).
+
+2026-11-04T00:35:25.210257+00:00 | evidence captured | GPU 0: NVIDIA GeForce RTX 4090 (UUID: GPU-5a5ec28e-51c2-7128-c85d-2e75b9b3cd39) | 75 measured timing rows; see gpu_hours.csv
+
+================================================================
+STILL TO ADD BY THE AUTHOR
+================================================================
+- Pod start/stop timestamps and reservation record for both sessions.
+- Repository URL and tag for the submitted code: [FILL IN]
+- Instructor clarification on one-GPU use across two pods: [FILL IN date / where recorded]
